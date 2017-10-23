@@ -4,7 +4,8 @@
   "description": "**Test ok**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,10 @@
     "vue-style-loader": "^3.0.3",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
-  }
+  },
+  "dependencies": {
+    "vue": "^2.5.2",
+    "vuex": "^3.0.0"
+  },
+
 }
