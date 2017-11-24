@@ -1,0 +1,3 @@
+Bracket Pair Colorizer
+IntelliSense for CSS class names
+Path Intellisense
