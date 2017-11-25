@@ -9,15 +9,18 @@
 </template>
 
 <script>
-    import { fruitMixin } from './fruitMixin';
+    import {
+        fruitMixin
+    } from "./fruitMixin";
 
     export default {
         mixins: [fruitMixin],
         created() {
-            console.log('Inside List Created Hook');
+            console.log("Inside List Created Hook");
         }
-    }
+    };
 </script>
 
 <style>
+
 </style>

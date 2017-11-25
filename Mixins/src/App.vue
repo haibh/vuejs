@@ -18,15 +18,17 @@
 </template>
 
 <script>
-    import List from './List.vue';
-    import { fruitMixin } from './fruitMixin';
+    import List from "./List.vue";
+    import {
+        fruitMixin
+    } from "./fruitMixin";
 
     export default {
         mixins: [fruitMixin],
         data() {
             return {
-                text: 'Hello there!'
-            }
+                text: "Hello there!"
+            };
         },
         filters: {
             toUppercase(value) {
@@ -36,8 +38,9 @@
         components: {
             appList: List
         }
-    }
+    };
 </script>
 
 <style>
+
 </style>
