@@ -9,9 +9,16 @@
                 <br>
                 <br>
                 <transition name="fade">
-                    <div class="alert alert-info" v-if="show">This is some info </div>
+                    <div class="alert alert-info" v-show="show">This is some info </div>
                 </transition>
                 <transition name="slide">
+                    <div class="alert alert-info" v-if="show">This is some info </div>
+                </transition>
+                <transition 
+                    appear=""
+                    enter-active-class="animated bounce"
+                    leave-active-class="animated shake"
+                    >
                     <div class="alert alert-info" v-if="show">This is some info </div>
                 </transition>
             </div>
@@ -23,7 +30,7 @@
     export default {
         data() {
             return {
-                show: false
+                show: true
             };
         }
     };
@@ -59,19 +66,19 @@
 
     @keyframes slide-in {
         from {
-            transform: translateY(20px)
+            transform: translateY(20px);
         }
         to {
-            transform: translateY(0)
+            transform: translateY(0);
         }
     }
 
     @keyframes slide-out {
         from {
-            transform: translateY(0)
+            transform: translateY(0);
         }
         to {
-            transform: translateY(20px)
+            transform: translateY(20px);
         }
     }
 </style>
