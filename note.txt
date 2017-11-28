@@ -1,3 +1,7 @@
 Bracket Pair Colorizer
 IntelliSense for CSS class names
 Path Intellisense
+
+
+
+npm install -save-dev babel-preset-stage-2
