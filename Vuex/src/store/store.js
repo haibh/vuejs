@@ -18,4 +18,4 @@ export const store = new Vuex.Store({
     modules: {
         counter
     }
-});
+})

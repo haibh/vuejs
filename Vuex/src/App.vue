@@ -25,19 +25,19 @@
 
     export default {
         computed: {
-          value: {
-              get() {
-                  return this.$store.getters[types.VALUE];
-              },
-              set(value) {
-                  this.$store.dispatch(types.UPDATE_VALUE, value);
-              }
-          }
+            value: {
+                get() {
+                    return this.$store.getters[types.VALUE];
+                },
+                set(value) {
+                    this.$store.dispatch(types.UPDATE_VALUE, value);
+                }
+            }
         },
         methods: {
-          updateValue(event) {
-              this.$store.dispatch(types.UPDATE_VALUE, event.target.value);
-          }
+            updateValue(event) {
+                this.$store.dispatch(types.UPDATE_VALUE, event.target.value);
+            }
         },
         components: {
             appCounter: Counter,
@@ -47,4 +47,3 @@
         }
     }
 </script>
-
