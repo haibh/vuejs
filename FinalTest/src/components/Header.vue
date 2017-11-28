@@ -12,7 +12,7 @@
             <router-link to="/portfolio" activeClass="active" tag="li">
               <a>Porfolio</a>
             </router-link>
-            <router-link to="/stock" activeClass="active" tag="li">
+            <router-link to="/stocks" activeClass="active" tag="li">
               <a>Stocks</a>
             </router-link>
           </ul>          
