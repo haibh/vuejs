@@ -7,11 +7,11 @@ export const routes = [{
         component: Home
     },
     {
-        path: 'portfolio',
+        path: '/portfolio',
         component: Portfolio
     },
     {
-        path: 'stocks',
+        path: '/stocks',
         component: Stocks
     }
 ]

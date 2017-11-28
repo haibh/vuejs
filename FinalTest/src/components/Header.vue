@@ -1,5 +1,41 @@
 <template>
   <div>
-      <h1>The header coponents</h1>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <router-link to="/" class="navbar-brand">Stock Trader</router-link>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <router-link to="/portfolio" activeClass="active" tag="li">
+              <a>Porfolio</a>
+            </router-link>
+            <router-link to="/stock" activeClass="active" tag="li">
+              <a>Stocks</a>
+            </router-link>
+          </ul>          
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">End day</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Save & Load
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Save data</a>
+                </li>
+                <li>
+                  <a href="#">Load Data</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 </template>
